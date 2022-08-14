@@ -1,0 +1,198 @@
+:root {
+  --green: #4da155;
+  --light_green: #83c389;
+  --yellow: #fce762;
+  --red: #eb5757;
+  --white: #fffded;
+  --black: #2e282a;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Figtree", sans-serif;
+  margin: 0;
+  background-color: #fff;
+}
+header {
+  text-align: center;
+}
+main {
+  padding: 5rem 0;
+}
+input,
+button,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: 1.2rem;
+  line-height: inherit;
+}
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+hr {
+  border: 1px solid var(--light_green);
+  margin: 2rem 0;
+}
+#title {
+  background-color: var(--green);
+  color: var(--white);
+  margin: 0;
+  font-size: 1.5rem;
+  padding: 2rem 0 1rem;
+}
+#description {
+  background-color: var(--yellow);
+  color: var(--black);
+  margin: 0;
+  font-size: 1.2rem;
+  padding: 0.8rem 0;
+}
+.form-container {
+  width: 90%;
+  max-width: 664px;
+  margin: 0 auto;
+  background-color: var(--green);
+  border-radius: 6px;
+  padding: 3rem 1.5rem;
+}
+.form-group {
+  margin-bottom: 1.5rem;
+}
+.form-q {
+  margin-bottom: 0.5rem;
+  display: block;
+  width: fit-content;
+}
+.form-q {
+  font-size: 1.2rem;
+  color: var(--white);
+}
+::placeholder {
+  color: var(--black);
+}
+.form-control {
+  display: block;
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--light_green);
+  line-height: 3rem;
+  height: 3rem;
+  color: var(--black);
+  padding: 0.5rem 0.75rem;
+}
+.input-textarea {
+  min-height: 100px;
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--light_green);
+  color: var(--black);
+  padding: 0.5rem 0.75rem;
+}
+.form-control:focus,
+.input-textarea:focus {
+  border: 2px solid var(--yellow);
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgb(77 161 85 / 25%);
+}
+.required {
+  color: var(--red);
+}
+.clue {
+  font-size: 0.8rem;
+}
+.form-set.subscribe {
+  font-size: 0.8rem;
+  margin: 2rem 0;
+}
+.form-set,
+.subscribe {
+  color: var(--white);
+}
+.form-set {
+  display: block;
+  position: relative;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding-left: 2rem;
+  margin-bottom: 0.5rem;
+  user-select: none;
+  width: fit-content;
+}
+.input-checkbox,
+.input-radio {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.checkmark,
+.radiomark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1.25rem;
+  width: 1.25rem;
+  background-color: var(--light_green);
+}
+.radiomark {
+  border-radius: 50%;
+}
+.checkmark.checkmark-small {
+  height: 1rem;
+  width: 1rem;
+}
+.input-checkbox:hover ~ .checkmark,
+.input-radio:hover ~ .radiomark {
+  background-color: var(--yellow);
+}
+.input-checkbox:checked ~ .checkmark,
+.input-radio:checked ~ .radiomark {
+  background-color: var(--yellow);
+}
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.input-checkbox:checked ~ .checkmark:after {
+  display: block;
+}
+.form-set .checkmark:after {
+  left: 7px;
+  top: 3px;
+  width: 6px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+.form-set .checkmark.checkmark-small:after {
+  left: 5px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+}
+#submit {
+  width: 100%;
+  background-color: var(--yellow);
+  border-radius: 4px;
+  cursor: pointer;
+  color: var(--black);
+  padding: 1rem 0;
+  font-weight: bold;
+  border: none;
+  letter-spacing: 4px;
+}
+#submit:hover {
+  box-shadow: 0 4px 4px 2px rgb(252 231 98 / 25%);
+}

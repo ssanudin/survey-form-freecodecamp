@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Survey Form for freeCodeCamp Project of Responsive Web Design"
+    />
+    <meta
+      name="keywords"
+      content="HTML, CSS, Form, SurveyForm, freeCodeCamp, ResponsiveWebDesign, RWD"
+    />
+    <meta name="author" content="Sanudin" />
+
+    <title>Survey Form - freeCodeCamp Project</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1 id="title">HOBBIES, ACTIVITIES, AND INTERESTS</h1>
+      <p id="description">Thank you for taking your time to help us</p>
+    </header>
+
+    <main>
+      <div class="form-container">
+        <form action="" id="survey-form">
+          <div class="form-group">
+            <label id="name-label" for="name" class="form-q"
+              >Name <span class="required">*</span></label
+            >
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="form-control"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label id="email-label" for="email" class="form-q"
+              >Email <span class="required">*</span></label
+            >
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form-control"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label id="number-label" for="number" class="form-q"
+              >Age <span class="required">*</span></label
+            >
+            <input
+              type="number"
+              name="age"
+              id="number"
+              min="20"
+              max="50"
+              class="form-control"
+              placeholder="Enter your age"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="occupation" class="form-q"
+              >Occupation <span class="required">*</span></label
+            >
+            <input
+              type="text"
+              name="occupation"
+              id="occupation"
+              class="form-control"
+              placeholder="Enter your occupation"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="marital-status" class="form-q"
+              >Marital Status <span class="required">*</span></label
+            >
+            <select
+              name="marital-status"
+              id="dropdown"
+              class="form-control"
+              required
+            >
+              <option value="" selected disabled>Select an option</option>
+              <option value="Married">Married</option>
+              <option value="Single">Single</option>
+              <option value="Divorced">Divorced</option>
+              <option value="Widowed">Widowed</option>
+            </select>
+          </div>
+          <hr />
+          <div class="form-group">
+            <fieldset>
+              <legend class="form-q">
+                Do you have any hobbies? <span class="required">*</span>
+                <span class="clue">(Please check any choices that apply)</span>
+              </legend>
+              <label for="reading" class="form-set">
+                <input
+                  type="checkbox"
+                  name="hobby"
+                  id="reading"
+                  class="input-checkbox"
+                  value="reading"
+                  required
+                />
+                <span class="checkmark"></span>
+                Reading
+              </label>
+              <label for="art-crafts" class="form-set">
+                <input
+                  type="checkbox"
+                  name="hobby"
+                  id="art-crafts"
+                  class="input-checkbox"
+                  value="art-crafts"
+                />
+                <span class="checkmark"></span>
+                Art/Crafts
+              </label>
+              <label for="games" class="form-set">
+                <input
+                  type="checkbox"
+                  name="hobby"
+                  id="games"
+                  class="input-checkbox"
+                  value="games"
+                />
+                <span class="checkmark"></span>
+                Games
+              </label>
+              <label for="photography" class="form-set">
+                <input
+                  type="checkbox"
+                  name="hobby"
+                  id="photography"
+                  class="input-checkbox"
+                  value="photography"
+                />
+                <span class="checkmark"></span>
+                Photography
+              </label>
+              <label for="cooking" class="form-set">
+                <input
+                  type="checkbox"
+                  name="hobby"
+                  id="cooking"
+                  class="input-checkbox"
+                  value="cooking"
+                />
+                <span class="checkmark"></span>
+                Cooking
+              </label>
+              <label for="fishing" class="form-set">
+                <input
+                  type="checkbox"
+                  name="hobby"
+                  id="fishing"
+                  class="input-checkbox"
+                  value="fishing"
+                />
+                <span class="checkmark"></span>
+                Fishing
+              </label>
+              <label for="music" class="form-set">
+                <input
+                  type="checkbox"
+                  name="hobby"
+                  id="music"
+                  class="input-checkbox"
+                  value="music"
+                />
+                <span class="checkmark"></span>
+                Music
+              </label>
+              <label for="gardening" class="form-set">
+                <input
+                  type="checkbox"
+                  name="hobby"
+                  id="gardening"
+                  class="input-checkbox"
+                  value="gardening"
+                />
+                <span class="checkmark"></span>
+                Gardening
+              </label>
+              <label for="watching-tv-movies" class="form-set">
+                <input
+                  type="checkbox"
+                  name="hobby"
+                  id="watching-tv-movies"
+                  class="input-checkbox"
+                  value="watching-tv-movies"
+                />
+                <span class="checkmark"></span>
+                Watching TV/Movies
+              </label>
+            </fieldset>
+          </div>
+          <div class="form-group">
+            <label for="activities" class="form-q"
+              >How do you spend your free time?
+              <span class="required">*</span></label
+            >
+            <textarea
+              name="activities"
+              id="activities"
+              class="input-textarea"
+              placeholder="Enter your activities"
+              required
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <label for="talents" class="form-q"
+              >Special talents or skills that I have that I would like to share
+              with others: <span class="clue">(optional)</span></label
+            >
+            <textarea
+              name="talents"
+              id="talents"
+              class="input-textarea"
+              placeholder="Enter your special talents"
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <fieldset>
+              <legend class="form-q">
+                What time of day would you be most available?
+                <span class="required">*</span>
+                <span class="clue">(Please check any choices that apply)</span>
+              </legend>
+              <label for="mornings" class="form-set">
+                <input
+                  type="checkbox"
+                  name="available-time"
+                  id="mornings"
+                  class="input-checkbox"
+                  value="mornings"
+                  required
+                />
+                <span class="checkmark"></span>
+                Mornings
+              </label>
+              <label for="afternoons" class="form-set">
+                <input
+                  type="checkbox"
+                  name="available-time"
+                  id="afternoons"
+                  class="input-checkbox"
+                  value="afternoons"
+                />
+                <span class="checkmark"></span>
+                Afternoons
+              </label>
+              <label for="evenings" class="form-set">
+                <input
+                  type="checkbox"
+                  name="available-time"
+                  id="evenings"
+                  class="input-checkbox"
+                  value="evenings"
+                />
+                <span class="checkmark"></span>
+                Evenings
+              </label>
+            </fieldset>
+          </div>
+          <div class="form-group">
+            <fieldset>
+              <legend class="form-q">
+                What day(s) of the week would you be most available?
+                <span class="required">*</span>
+                <span class="clue">(Please check any choices that apply)</span>
+              </legend>
+              <label for="monday" class="form-set">
+                <input
+                  type="checkbox"
+                  name="available-day"
+                  id="monday"
+                  class="input-checkbox"
+                  value="monday"
+                  required
+                />
+                <span class="checkmark"></span>
+                Monday
+              </label>
+              <label for="tuesday" class="form-set">
+                <input
+                  type="checkbox"
+                  name="available-day"
+                  id="tuesday"
+                  class="input-checkbox"
+                  value="tuesday"
+                />
+                <span class="checkmark"></span>
+                Tuesday
+              </label>
+              <label for="wednesday" class="form-set">
+                <input
+                  type="checkbox"
+                  name="available-day"
+                  id="wednesday"
+                  class="input-checkbox"
+                  value="wednesday"
+                />
+                <span class="checkmark"></span>
+                Wednesday
+              </label>
+              <label for="thursday" class="form-set">
+                <input
+                  type="checkbox"
+                  name="available-day"
+                  id="thursday"
+                  class="input-checkbox"
+                  value="thursday"
+                />
+                <span class="checkmark"></span>
+                Thursday
+              </label>
+              <label for="friday" class="form-set">
+                <input
+                  type="checkbox"
+                  name="available-day"
+                  id="friday"
+                  class="input-checkbox"
+                  value="friday"
+                />
+                <span class="checkmark"></span>
+                Friday
+              </label>
+              <label for="saturday" class="form-set">
+                <input
+                  type="checkbox"
+                  name="available-day"
+                  id="saturday"
+                  class="input-checkbox"
+                  value="saturday"
+                />
+                <span class="checkmark"></span>
+                Saturday
+              </label>
+              <label for="sunday" class="form-set">
+                <input
+                  type="checkbox"
+                  name="available-day"
+                  id="sunday"
+                  class="input-checkbox"
+                  value="sunday"
+                />
+                <span class="checkmark"></span>
+                Sunday
+              </label>
+            </fieldset>
+          </div>
+          <hr />
+          <div class="form-group">
+            <fieldset>
+              <legend class="form-q">
+                Where do you find this website? <span class="required">*</span>
+              </legend>
+              <label for="google" class="form-set">
+                <input
+                  type="radio"
+                  name="info-from"
+                  id="google"
+                  class="input-radio"
+                  value="google"
+                  required
+                />
+                <span class="radiomark"></span>
+                Google
+              </label>
+              <label for="friend" class="form-set">
+                <input
+                  type="radio"
+                  name="info-from"
+                  id="friend"
+                  class="input-radio"
+                  value="friend"
+                />
+                <span class="radiomark"></span>
+                Friend
+              </label>
+              <label for="social-media" class="form-set">
+                <input
+                  type="radio"
+                  name="info-from"
+                  id="social-media"
+                  class="input-radio"
+                  value="social-media"
+                />
+                <span class="radiomark"></span>
+                Social Media
+              </label>
+              <label for="linkedin" class="form-set">
+                <input
+                  type="radio"
+                  name="info-from"
+                  id="linkedin"
+                  class="input-radio"
+                  value="linkedin"
+                />
+                <span class="radiomark"></span>
+                LinkedIn
+              </label>
+              <label for="others" class="form-set">
+                <input
+                  type="radio"
+                  name="info-from"
+                  id="others"
+                  class="input-radio"
+                  value="others"
+                />
+                <span class="radiomark"></span>
+                Others
+              </label>
+            </fieldset>
+          </div>
+          <div class="form-group">
+            <label for="subscribe" class="form-set subscribe">
+              <input
+                type="checkbox"
+                name="subscribe"
+                id="subscribe"
+                class="input-checkbox"
+                value="subscribe"
+              />
+              <span class="checkmark checkmark-small"></span>
+              Subscribe
+            </label>
+          </div>
+          <button type="submit" id="submit">SUBMIT</button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
